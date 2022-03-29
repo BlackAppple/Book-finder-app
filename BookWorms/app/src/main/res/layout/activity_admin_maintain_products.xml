@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="15dp"
+    tools:context=".AdminMaintainProductsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/book_image_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/book_name"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/book_name_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_image_maintain"
+            android:hint="Book Name"
+            android:textAlignment="center"
+            android:background="@drawable/input_design"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/Crimson"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:id="@+id/book_price_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_name_maintain"
+            android:hint="Book Price"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="@drawable/input_design"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/Crimson"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:id="@+id/book_description_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_price_maintain"
+            android:hint="Book Description"
+            android:textAlignment="center"
+            android:background="@drawable/input_design"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/Crimson"
+            android:gravity="center_horizontal" />
+        <Button
+            android:id="@+id/Apply_changes_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_description_maintain"
+            android:hint="Apply Changes"
+            android:layout_marginTop="2dp"
+            android:textAlignment="center"
+            android:background="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/delete_book_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Apply_changes_btn"
+            android:hint="Delete Book"
+            android:textAlignment="center"
+            android:background="@color/colorAccent"
+            android:padding="12dp"
+            android:layout_margin="30dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+             />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
